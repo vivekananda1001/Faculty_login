@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Application Form</title>
+    <link rel="icon" href="IITP_logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <header>
+        <div class="navigationbar">
+            <h1 class="hindi">भारतीय प्रौद्योगिकी संस्थान पटना</h1>
+            <h1 class="angreji">Indian Institute of Technology Patna</h1>
+        </div>
+    </header>
+
+    <main>
+        <h3 class="blinkText mb-5">Application for Faculty Position</h3>
+         <!-- <div class="container-md border"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 well">
+                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="ci_csrf_token" value=""/>
+                        <fieldset>
+                            <legend>
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <h4 class="wlcm-msg">Welcome: Hrishikesh!</h4>
+                                    </div>
+                                    <div class="col-md-1 text-right">
+                                        <a href="#" class="btn btn-sm btn-success ml-2">Logout</a> 
+                                    </div>
+                                </div>
+                            </legend>
+                            <!-- section 14:Significant research contribution and future plans *-->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            14. Significant research contribution and future plans *
+                                            <h4>(Please provide a Research Statement describing your research plans and one or two specific research projects to be conducted at IIT Patna in 2-3 years time frame) in not more than 500 words</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="Detailed Research Statement describing your research plans" rows="5"></textarea>
+                            </fieldset>    
+                            </br>
+                            <!-- section 15: Significant teaching contribution and future plans*-->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            15. Significant teaching contribution and future plans *
+                                            <h4>(Please list UG/PG courses that you would like to develop and/or teach at IIT Patns) in not more than 500 words</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="teaching contribution" rows="5"></textarea>
+                            </fieldset>                        
+                            <!-- section 16: Any other information: -->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            16.Any other information
+                                            <h4>(Not more than 500 words)</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="What are your future plans?" rows="5"></textarea>
+                            </fieldset> 
+                            <!-- section 17. Professional Service : Editorship/Reviewership -->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            17. Professional Service : Editorship/Reviewership
+                                            <h4>(Not more than 500 words)</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="Professional Service : Editorship/Reviewership" rows="5"></textarea>
+                            </fieldset> 
+                            <!-- Section 18. Detailed List of Journal Publications -->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            18.Detailed List of Journal Publications
+                                            <h4>(Including Sr. No., Author's Names, Paper Title, Volume, Issue, Year, Page Nos., Impact Factor (if any), DOI, Status[Published/Accepted] )</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="Detailed List of Journal Publications" rows="5"></textarea>
+                            </fieldset>
+                            <!-- Section 19. Detailed List of Conference Publications -->
+                            <fieldset>
+                                <legend>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            19. Detailed List of Conference Publications
+                                            <h4>(Including Sr. No., Author's Names, Paper Title, Name of the conference, Year, Page Nos., DOI [If any] )</h4>
+                                        </div>
+                                    </div>
+                                </legend>
+                                <textarea class="form-control" id="research_plans" name="research_plans" placeholder="Detailed List of Conference Publications" rows="5"></textarea>
+                            </fieldset>
+                        </fieldset>
+                        <!-- Save and Next and previous buttons -->
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="prev-btn">
+                                    <button class="previous-page-btn" onclick="goBack()">
+                                        <i class="fas fa-arrow-left"></i> 
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="add_more col-3">
+                                <div class="btn-container">
+                                    <button type="submit" id="nextButton">Save And Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
