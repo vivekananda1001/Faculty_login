@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+body {
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-color:#464646;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.wrapper{
+  width:420px;
+  /* background:#d0d3d0; */
+  background:transparent;
+  border-radius: 10px;
+}
+
+.wrapper .input-box{
+   width:100%;
+   height: 50px;
+   /* background: #eca5a5; */
+   margin:30px 0;
+}
+.wrapper .remember-forgot{
+  display:flex;
+  justify-content: space-between;
+  font-size:16px;
+  margin:20px 0px 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #ffffff;
+  margin-right: 10px;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+  color:#b11111;
+}
+
+.wrapper .btn{
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #080a0c;
+  color: #fdfdfd;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+.wrapper .forgot-btn{
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-left:115px;
+  background-color: #080a0c;
+  color: #fdfdfd;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+.wrapper .forgot-btn:hover{
+  background-color: #f00404;
+  color: #fdfdfd;
+  font-weight: 600;
+}
+
+.wrapper .btn:hover {
+  background-color: #2cc348;
+  color: #201818;
+  font-weight: 600;
+}
+
+.wrapper .register-link{
+  font-size:18px;
+  text-align: center;
+  margin-top:20px;
+}
+
+.register-link p a{
+  text-decoration: none;
+  margin-right: 10px;
+  color:#e4e4e4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left:10px;
+}
+
+.register-link a:hover{
+  text-decoration: underline;
+  color:#232323;
+}
+
+.input-box input{
+  width:100%;
+  height:100%;
+  border-radius: 5px;
+  background:#b0adadaf;
+  border:none;
+  outline:none;
+  border:2px solid rgba(255,255,255,.2);
+  padding: 20px 45px 20px 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input-box input::placeholder{
+  color:#f5f5f5;
+  padding-left:20px;
+}
+
+.input-box i{
+  position:absolute;
+  right:20%;
+  padding-top:15px;
+  font-size:25px;
+}
+
+.navigationbar {
+  font-size: 0.8rem;
+  height: 7rem;
+  color: rgb(28, 7, 7);
+  background-color: #B3B3B3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block: 0.2rem;
+}
+
+.hindi{
+  padding-top:30px;
+  font-family: "Mukta", sans-serif;
+  font-style: normal;
+  font-size: 1.75rem;
+}
+
+.angreji{
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+
+main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+@keyframes blink {
+0% {
+  opacity: 1;
+}
+50% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.blinkText {
+  animation: blink 1.5s infinite;
+  font-size: 1.5rem;
+  color:rgb(221, 229, 232);
+  padding: 1rem;
+}
+
+.box {
+  background-color: rgba(141, 140, 140, 0.863);
+  /* background-color: #f5f5f57b; */
+  flex: 1;
+  width: 75%;
+  min-height: 400px;
+  display: flex;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headings{
+  color:#101010e2;
+  margin-left: 100px;
+  font-size: 36px;
+  /* text-decoration: underline; */
+  font-weight: 520;
+}
+
+.logo {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.logo img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.formPlace {
+  width: 50%;
+  padding: 20px;
+}
+
+.PageNotFound {
+  font-size: 4rem;
+  padding-top: 10rem;
+}
+
+@media (max-width: 560px) {
+  .navigationbar {
+    min-height: 80px;
+  }
+  .navigationbar h1 {
+    font-size: 20px;
+  }
+  .blinkText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    min-width: 100%;
+  }
+  .box {
+    background-color: #f5f5f5;
+    min-width: 75%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    height: 50%;
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .formPlace {
+    height: 50%;
+    padding: 20px;
+  }
+}
